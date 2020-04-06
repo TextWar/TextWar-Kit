@@ -3,4 +3,4 @@ jdk:
   - openjdk8
 script:
   - sh download_env/get_source.sh
-  - ls
+  - sh download_env/start.sh
