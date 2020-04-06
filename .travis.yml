@@ -2,5 +2,5 @@ language: java
 jdk:
   - openjdk8
 script:
-  - ls
   - sh download_env/get_source.sh
+  - ls
