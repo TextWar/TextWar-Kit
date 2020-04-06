@@ -1,5 +1,5 @@
 #!/bin/bash
-#offline jdk install
+#by junhe-fafa
 command -v javac >/dev/null 2>&1
 if [ $? -ne 0 ]; then
 echo "Install Jdk...."
