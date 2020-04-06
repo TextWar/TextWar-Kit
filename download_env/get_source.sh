@@ -28,4 +28,5 @@ mvn clean compile package install -f textwar_plugin/pom.xml
 mvn clean compile package install -f textwar_console/pom.xml
 mvn clean compile package install -f textwar_client_connector/pom.xml
 cd ..
-rm -rf master
+mv TextWar-master/textwar_client_connector/target/textwar_client_connector-1.0.jar textwar_server.jar
+rm -rf TextWar-master
