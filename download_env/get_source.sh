@@ -17,8 +17,8 @@ if [ $? -ne 0 ]; then
     fi
 fi
 wget https://github.com/TextWar/TextWar/archive/master.zip
-unzip master.zip
-rm -f master.zip
+unzip TextWar-master.zip
+rm -f TextWar-master.zip
 cd master
 pwd
 mvn clean compile package install -f textwar_pom/pom.xml
