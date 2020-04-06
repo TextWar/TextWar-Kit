@@ -19,8 +19,7 @@ fi
 wget https://github.com/TextWar/TextWar/archive/master.zip
 unzip TextWar-master.zip
 rm -f TextWar-master.zip
-cd master
-pwd
+cd TextWar-master
 mvn clean compile package install -f textwar_pom/pom.xml
 mvn clean compile package install -f textwar/pom.xml
 mvn clean compile package install -f textwar_protocol/pom.xml
