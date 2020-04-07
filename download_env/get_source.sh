@@ -21,12 +21,24 @@ cd master
 unzip master.zip
 rm -f master.zip
 cd TextWar-master
-mvn clean compile package install -f textwar_pom/pom.xml
-mvn clean compile package install -f textwar/pom.xml
-mvn clean compile package install -f textwar_protocol/pom.xml
-mvn clean compile package install -f textwar_plugin/pom.xml
-mvn clean compile package install -f textwar_console/pom.xml
-mvn clean compile package install -f textwar_client_connector/pom.xml
+cd textwar_pom
+mvn clean compile package install
+cd ..
+cd textwar
+mvn clean compile package install
+cd ..
+cd textwar_protocol
+mvn clean compile package install
+cd ..
+cd textwar_plugin
+mvn clean compile package install
+cd ..
+cd textwar_console
+mvn clean compile package install
+cd ..
+cd textwar_client_connector
+mvn clean compile package install
+cd ..
 cd ..
 mv TextWar-master/textwar_client_connector/target/textwar_client_connector-1.0.jar textwar_server.jar
 rm -rf TextWar-master
