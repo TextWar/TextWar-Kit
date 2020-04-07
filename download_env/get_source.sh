@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #by magiclu
+#only support linux
 command -v mvn >/dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "downloading the maven"
@@ -8,13 +9,7 @@ if [ $? -ne 0 ]; then
     cd apache-maven-3.6.3
     path=$(pwd)
     export PATH="${path}:${PATH}"
-
-    unameOut="$(uname -s)"
-    if [$unameOut == "Darwin"];then
-       source ~/.bash_profile
-    else
-       source /etc/profile
-    fi
+    source /etc/profile
 fi
 wget https://github.com/TextWar/TextWar/archive/master.zip
 cd master
