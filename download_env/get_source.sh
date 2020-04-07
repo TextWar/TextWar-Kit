@@ -9,8 +9,8 @@ if [ $? -ne 0 ]; then
     cd apache-maven-3.6.3
     path=$(pwd)
 
-    sudo export PATH="${path}/bin:${PATH}"
-    sudo source /etc/profile
+    export PATH="${path}/bin:${PATH}"
+    source /etc/profile
     cd ..
     rm -f apache-maven-3.6.3-bin.zip
 fi
