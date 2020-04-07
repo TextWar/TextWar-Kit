@@ -8,8 +8,11 @@ if [ $? -ne 0 ]; then
     tar -xvf apache-maven-3.6.3-bin.tar.gz
     cd apache-maven-3.6.3
     path=$(pwd)
-    sudo export PATH="${path}:${PATH}"
+
+    sudo export PATH="${path}/bin:${PATH}"
     sudo source /etc/profile
+    cd ..
+    rm -f apache-maven-3.6.3-bin.zip
 fi
 wget https://github.com/TextWar/TextWar/archive/master.zip
 cd master
