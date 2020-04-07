@@ -5,3 +5,4 @@ script:
   - sh download_env/get_source.sh
   - sh download_env/start.sh
   - ls
+  - cat server.groovy
