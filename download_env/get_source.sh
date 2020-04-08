@@ -14,12 +14,10 @@ if [ $? -ne 0 ]; then
     cd ..
     rm -f apache-maven-3.6.3-bin.zip
 fi
-mkdir textwar_py
-cd textwar_py
 wget https://github.com//TextWar/TextWar-PythonPlugin/archive/master.zip
 unzip master.zip
+mv TextWar-PythonPlugin-master textwar_py
 rm -rf master.zip
-cd ..
 wget https://github.com/TextWar/TextWar/archive/master.zip
 unzip master.zip
 rm -f master.zip
